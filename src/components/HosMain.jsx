@@ -16,7 +16,7 @@ function HosMain({end,setend,queryData}) {
     }
   }
   const fetchHospitals = async ({pageParam})=>{
-    const {data} = await axios.get(BASE_URL + `/getbank?hos_id=${queryData.hos_id}&range=${queryData.Range}&blood_type=${queryData.Blood}&page=${pageParam-1}`);
+    const {data} = await axios.get(BASE_URL + `getbank?hos_id=${queryData.hos_id}&range=${queryData.Range}&blood_type=${queryData.Blood}&page=${pageParam-1}`);
     return data;
   }
 
