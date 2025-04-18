@@ -203,9 +203,6 @@ function Search() {
   const [data, setdata] = useState([]);
   const [temp, settemp] = useState(null);
 
-  if (localStorage.getItem("hospital")) {
-    navigate("/body");
-  }
 
   const fetchdata = async (x) => {
     if (x.length > 0) {
